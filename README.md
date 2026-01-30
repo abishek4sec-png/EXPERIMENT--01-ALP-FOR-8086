@@ -150,6 +150,23 @@ ret
 ## Output  
 <img width="974" height="769" alt="image" src="https://github.com/user-attachments/assets/15b9d57f-af23-44af-bd87-f55c10b8a52c" />
 
+## AND for 8 bit alp:
+```
+org 100h
+
+mov al,[1100h]
+
+mov bl,[1102h]
+AND al,bl
+mov [1200h],al
+hlt
+
+ret
+```
+## Output:
+<img width="967" height="753" alt="image" src="https://github.com/user-attachments/assets/5e84d786-4c9e-4a64-b3c3-068b7c353165" />
+## OR for 8 bit alp:
+
 
 ## Result :
  The execution of ALP on fundamental arithmetic and logical operations is successfully completed.
