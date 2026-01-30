@@ -179,7 +179,9 @@ hlt
 ```
 ## Output:
 <img width="985" height="784" alt="image" src="https://github.com/user-attachments/assets/2ac07e6e-172c-4be8-a28a-6004679b1b02" />
+
 ## NOT for 8 bit alp:
+
 ```
 
 org 100h
