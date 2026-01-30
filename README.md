@@ -183,22 +183,20 @@ hlt
 ## NOT for 8 bit alp:
 
 ```
-
 org 100h
-
 mov al,[1100h]
 NOT al
 mov [1200h],al
 hlt
 ```
+
 ## Output:
 <img width="978" height="775" alt="image" src="https://github.com/user-attachments/assets/1f487864-32b0-4828-8808-94c081ddc68f" />
+
 ## NAND for 8 bit alp:
 ```
 org 100h
-
 mov al,[1100h]
-
 mov bl,[1102h]
 AND al,bl
 NOT al
