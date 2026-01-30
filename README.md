@@ -1,7 +1,7 @@
 # EXPERIMENT--01-ALP-FOR-8086
-Name :Abishek P
-Roll no :212224240002
-Date of experiment : 30-01-2026
+## Name :Abishek P
+## Roll no :212224240002
+## Date of experiment : 30-01-2026
 
 
 
@@ -164,9 +164,93 @@ hlt
 ret
 ```
 ## Output:
-<img width="967" height="753" alt="image" src="https://github.com/user-attachments/assets/5e84d786-4c9e-4a64-b3c3-068b7c353165" />
-## OR for 8 bit alp:
+<img width="992" height="776" alt="image" src="https://github.com/user-attachments/assets/7405a995-35c2-4147-8bc9-57b7a9a73e42" />
 
+## OR for 8 bit alp:
+```
+org 100h
+
+mov al,[1100h]
+
+mov bl,[1102h]
+OR al,bl
+mov [1200h],al
+hlt
+```
+## Output:
+<img width="985" height="784" alt="image" src="https://github.com/user-attachments/assets/2ac07e6e-172c-4be8-a28a-6004679b1b02" />
+## NOT for 8 bit alp:
+```
+
+org 100h
+
+mov al,[1100h]
+NOT al
+mov [1200h],al
+hlt
+```
+## Output:
+<img width="978" height="775" alt="image" src="https://github.com/user-attachments/assets/1f487864-32b0-4828-8808-94c081ddc68f" />
+## NAND for 8 bit alp:
+```
+org 100h
+
+mov al,[1100h]
+
+mov bl,[1102h]
+AND al,bl
+NOT al
+mov [1200h],al
+hlt
+```
+## Output:
+<img width="978" height="765" alt="image" src="https://github.com/user-attachments/assets/3a5d1235-8e77-4d7f-a73c-a750395d7071" />
+
+## NOR for 8 bit alp:
+```
+org 100h
+
+mov al,[1100h]
+
+mov bl,[1102h]
+OR al,bl
+NOT al
+mov [1200h],al
+hlt
+```
+## OUtput:
+<img width="975" height="772" alt="image" src="https://github.com/user-attachments/assets/a1602eef-c680-4de1-b047-504ab4ee0410" />
+
+## XOR for 8 bit alp:
+```
+org 100h
+
+mov al,[1100h]
+
+mov bl,[1102h]
+XOR al,bl
+mov [1200h],al
+hlt
+```
+## output:
+
+<img width="975" height="772" alt="image" src="https://github.com/user-attachments/assets/47bf9e6c-96d0-4479-8978-f9f1f5657712" />
+
+## XNOR for 8 bit alp:
+```
+org 100h
+
+mov al,[1100h]
+
+mov bl,[1102h]
+XOR al,bl
+not al
+mov [1200h],al
+hlt
+```
+
+## Output:
+<img width="975" height="772" alt="image" src="https://github.com/user-attachments/assets/97efdd67-513d-4abc-8e78-649b494127bf" />
 
 ## Result :
  The execution of ALP on fundamental arithmetic and logical operations is successfully completed.
